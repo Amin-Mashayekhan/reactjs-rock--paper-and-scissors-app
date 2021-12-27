@@ -1,0 +1,23 @@
+@import "./scss/variables";
+@import "./scss/global";
+
+
+footer {
+    position        : fixed;
+    bottom          : 0.5%;
+    left            : 0.5%;
+    text-align      : center;
+    line-height     : 16px;
+    padding         : 2px 0px 1px;
+    background-color: lightcyan;
+    width           : 240px;
+    max-width       : 86%;
+    margin-top      : auto;
+    font-size       : 11px;
+}
+
+
+footer a {
+    color          : #000;
+    text-decoration: none;
+}
