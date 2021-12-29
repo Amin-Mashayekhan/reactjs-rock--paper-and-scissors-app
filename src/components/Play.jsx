@@ -15,12 +15,12 @@ const Play = ({setMyChoice}) => {
             </Link>
             <Link to="/game">
                 <div data-id="scissors" className="icon icon-scissors" onClick={setChoice}>
-                    scissors
+                    Scissors
                 </div>
             </Link>
             <Link to="/game">
                 <div data-id="rock" className="icon icon-rock" onClick={setChoice}>
-                    rock
+                    Rock
                 </div>
             </Link>
         </div>

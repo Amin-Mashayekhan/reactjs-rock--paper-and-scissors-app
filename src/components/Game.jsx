@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Game = ({ score, myChoice, setScore }) => {
 
@@ -25,25 +26,34 @@ const Game = ({ score, myChoice, setScore }) => {
             setScore(score + 1);
         } else if (myChoice === "scissors" && house === "rock") {
             setPlayerWin("lose");
-            setScore(score + 1);
+            setScore(score - 1);
         } else if (myChoice === "paper" && house === "rock") {
             setPlayerWin("win");
             setScore(score + 1);
         } else if (myChoice === "paper" && house === "scissors") {
             setPlayerWin("lose");
-            setScore(score + 1);
+            setScore(score - 1);
         } else {
             setPlayerWin("draw");
         }
-    }
+    };
+
+    useEffect( () => {
+        Result();
+    }, [house]);
+
+
     return (
         <div className="game">
             my choice: {myChoice} <br />
-            House choice: {house}
+            House choice: {house} <br />
             Result:
             {playerWin === "win" && <h2>You win</h2>}
             {playerWin === "lose" && <h2>You lose</h2>}
             {playerWin === "draw" && <h2>Draw</h2>}
+            <Link to="/" onClick={() => setHouse()} >
+                Play Again  
+            </Link>
         </div> 
     )
 }
