@@ -4,10 +4,45 @@ body {
   color: #fff;
   background: radial-gradient(circle, #1f3756, #15103d);
   text-align: center;
+  box-sizing: border-box;
 }
 
-a {
-  color: white;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  border: 3px solid #606e85;
+  max-width: 43.75rem;
+  width: 100%;
+  margin-top: 1.875rem;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 2rem;
+}
+
+.score-box {
+  padding: 0.75rem 2.5rem;
+  background-color: #fff;
+  color: #2a46c0;
+  border-radius: 5px;
+}
+.score-box_score {
+  color: #3b4363;
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
 footer {
