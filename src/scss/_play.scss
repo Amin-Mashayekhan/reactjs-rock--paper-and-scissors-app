@@ -1,0 +1,38 @@
+.play{
+    width:  100%;
+    position: relative;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.triangle{
+    position: absolute;   
+    align-self: center;
+    margin-top: 70px;  
+}
+
+
+.items{
+    display: flex;
+    justify-content: center;
+    .icon{
+        height: 160px;
+        width: 160px;
+        border: 18px solid;
+        border-radius: 50%; 
+        &-paper{
+            @include icon(ImageP, $paper-gradient);
+            transform: translateX(1.5rem);
+        }
+        &-scissors{
+            @include icon(ImageS, $scissors-gradient);
+            transform: translateX(-5rem);
+        }
+        &-rock{
+            @include icon(ImageR, $rock-gradient);
+            transform: translateX(-10rem) translateY(13rem);
+        }
+    }
+}
