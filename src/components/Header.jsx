@@ -10,7 +10,7 @@ const Header = ({score}) => {
            </div>
            <div className="score-box">
                <span>Score</span>
-               <div className="ccore-box_score">{score}</div>
+               <div className="score-box_score">{score}</div>
            </div>
          </div>
      )

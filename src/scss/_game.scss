@@ -1,0 +1,139 @@
+.game, .result{
+    display:flex;
+    margin-top: 50px;
+    flex-wrap: nowrap;
+    align-items: center;
+
+
+    &_you{
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.5rem;
+
+        .text{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 300; 
+            margin-bottom: 2.5rem;
+        }
+
+
+        .icon{
+            height:250px;
+            width: 250px;
+            border-radius: 50%;
+            border-color: transparent;
+            border: 25px solid;
+            background-size: 50%;
+
+
+            &-paper{
+                @include icon($imageP, $paper-gradient);
+                &-winner{
+                    @include bigShadow($paper-gradient)
+                }
+            }
+            &-scissors{
+                @include icon($imageS, $scissors-gradient);
+                &-winner{
+                    @include bigShadow($scissors-gradient)
+                }
+            }
+            &-rock{
+                @include icon($imageR, $rock-gradient);
+                &-winner{
+                    @include bigShadow($rock-gradient)
+                }
+            }
+        }
+    }
+
+
+    &_play{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+        .text{
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .play-again{
+            transition: color 0.09s;
+            background-color: #fff;
+            text-decoration: none;
+            text-transform:uppercase;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            &:hover{
+                color: red;
+            }
+        }
+    }
+
+
+    &_house{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5rem;
+
+        .text{
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 300; 
+            margin-bottom: 2.5rem;
+        }
+
+
+        .icon{
+            height:250px;
+            width: 250px;
+            border-radius: 50%;
+            border-color: transparent;
+            border: 25px solid;
+            background-size: 50%;
+
+
+            &-paper {
+                @include icon($imageP, $paper-gradient);
+
+                &-winner {
+                    @include bigShadow($paper-gradient)
+                }
+            }
+
+
+            &-scissors {
+                @include icon($imageS, $scissors-gradient);
+
+                &-winner {
+                    @include bigShadow($scissors-gradient)
+                }
+            }
+
+
+            &-rock {
+                @include icon($imageR, $rock-gradient);
+
+                &-winner {
+                    @include bigShadow($rock-gradient)
+                }
+            }
+        }
+
+        
+        .counter{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            background-color: rgba(#000000, 0.3);
+            font-size: 8rem;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+}
