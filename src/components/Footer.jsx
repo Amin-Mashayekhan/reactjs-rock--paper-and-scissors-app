@@ -13,11 +13,10 @@ const Footer = () => {
         <React.Fragment>
             <footer className="footer">
                 <div className="attribution">
-                    Challenge by {" "} 
-                    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-                        Frontend Mentor
-                    </a>
-                    . Coded by <a href="#">Amin Mashayekhan</a>.
+                    Coded by <a href="https://github.com/Amin-Mashayekhan">Amin Mashayekhan</a>.
+                    Guided by CodeBucks.
+                    <p>Challenge by {" "} Frontend Mentor. </p>
+                    
                 </div>
                 <button onClick={toggle} className="rules">
                     Rules

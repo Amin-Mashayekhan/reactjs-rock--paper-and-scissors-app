@@ -6,6 +6,13 @@
         left: 50%;
         transform: translate(-50%);
         bottom: 1rem;
+        color: #000;
+        background: lightcyan;
+        padding: 2px 5px 3px;
+        font-size: 15px;
+        a {
+            text-decoration: none;
+        }
     }
 
 
@@ -20,7 +27,6 @@
         background: none;
 
 
-
         font-weight: 600;
         letter-spacing: 2px;
 
@@ -30,4 +36,25 @@
             cursor: pointer;
         }
     }
+
 }
+
+// footer {
+//     position        : fixed;
+//     bottom          : 0.5%;
+//     left            : 0.5%;
+//     text-align      : center;
+//     line-height     : 16px;
+//     padding         : 2px 0px 1px;
+//     background-color: lightcyan;
+//     width           : 240px;
+//     max-width       : 86%;
+//     margin-top      : auto;
+//     font-size       : 11px;
+// }
+
+
+// footer a {
+//     color          : #000;
+//     text-decoration: none;
+// }
