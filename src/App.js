@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom'
+import Footer from './components/Footer';
 
 import Game from './components/Game'
 import Header from './components/Header';
@@ -21,15 +22,14 @@ const App = () => {
                     <Route path="/game">
                         <Game myChoice={myChoice} score={score} setScore={setScore} />
                     </Route>
-
                 </Switch>
-
+                <Footer /> 
             </div>
-            <footer>
+            {/* <footer>
                 Coded by <a target="_blank" rel="noreferrer" href='https://github.com/MohammadAmin-Mashayekhan'>Mohammad amin Mashayekhan</a>
                 <br />
                 Guided by:<span> Digital Solutions Master</span>
-            </footer>
+            </footer> */}
         </React.Fragment>
     )
 }

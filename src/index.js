@@ -10,7 +10,7 @@ import "./styles.scss";
 ReactDOM.render(
   // <Router>
   <BrowserRouter>
-    <App />,
+    <App />
   </BrowserRouter>,
   // </Router>,
   document.getElementById('root')
