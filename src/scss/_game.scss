@@ -129,10 +129,28 @@
             width: 250px;
             border-radius: 50%;
             background-color: rgba(#000000, 0.3);
-            font-size: 8rem;
+            // font-size: 8rem;
+            background-size: 40%;
             display: flex; 
             flex-direction: column;
             justify-content: center;
+            @include icon($imageP, $paper-gradient);
+            animation: randomIcon 0.5s infinite linear;
+        }
+
+        @keyframes randomIcon {
+            0%{
+                @include icon($imageP, $paper-gradient);
+            } 
+            33%{
+                @include icon($imageS, $scissors-gradient);
+            }
+            66%{
+                @include icon($imageR, $rock-gradient);
+            }
+            100%{
+                @include icon($imageP, $paper-gradient);
+            }
         }
     }
 

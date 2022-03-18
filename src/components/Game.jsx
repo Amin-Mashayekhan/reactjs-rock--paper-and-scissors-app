@@ -89,7 +89,7 @@ const Game = ({ score, myChoice, setScore }) => {
                     counter === 0 ? (
                         <div className={`icon icon-${house} ${playerWin === "lose" && `icon icon-${house}-winner`}`}></div>
                     ) : (
-                        <div className="counter">{counter}</div>
+                        <div className="counter"></div>
                     )
                 }
             </div>
