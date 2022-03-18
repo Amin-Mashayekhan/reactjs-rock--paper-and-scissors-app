@@ -1,34 +1,35 @@
 //  to convert px to rem, you have to devide the px amount to 16
- .header{
-     display: flex;
-     border: 3px solid $header-outline;
-     max-width: 43.75rem;
-     width: 100%;
-     margin-top: 1.875rem;
-     border-radius: 1rem;
-     padding: 1.25rem;
-     justify-content: space-between;
- }
+.header {
+    display: flex;
+    border: 3px solid $header-outline;
+    max-width: 43.75rem;
+    width: 100%;
+    margin-top: 1.875rem;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    justify-content: space-between;
 
 
- .text{
-     font-size: 2.5rem;
-     text-transform: uppercase;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     line-height: 2rem;
- }
-
-
- .score-box{
-     padding: 0.75rem 2.5rem;
-     background-color: #fff;
-     color: $score-text;
-    border-radius: 5px; 
-    &_score{
-        color: $dark-text;
-        font-size: 3.5rem;
-        font-weight: 700;
+    .text {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 2.4rem;
     }
- }
+
+
+    .score-box {
+        padding: 0.75rem 2.5rem;
+        background-color: #fff;
+        color: $score-text;
+        border-radius: 5px;
+
+        &_score {
+            color: $dark-text;
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+    }
+}
