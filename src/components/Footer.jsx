@@ -13,7 +13,7 @@ const Footer = () => {
         <React.Fragment>
             <footer className="footer">
                 <div className="attribution">
-                    Coded by <a href="https://github.com/Amin-Mashayekhan">Amin Mashayekhan</a>.
+                    Coded by <a href="https://github.com/Amin-Mashayekhan" target="_blank" rel="noreferrer">Amin Mashayekhan</a>.
                     Guided by CodeBucks.
                     <p>Challenge by {" "} Frontend Mentor. </p>
                     
